@@ -2,10 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin= require('html-webpack-plugin');
 module.exports = {
     entry: './src/index.js',
-
     output: {
-        path: path.join(__dirname,"/dist"),
+        path: path.join(__dirname, "/dist"),
         filename: "index_bundle.js",
+        publicPath: './', // 🟢 This is needed for GitHub Pages to load routes properly
+    },
+    
     },
     module:{
         rules: [
