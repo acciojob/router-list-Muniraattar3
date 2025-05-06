@@ -1,16 +1,12 @@
-import { HarshRouter as Router, Routes, Route } from 'react-router-dom';
-import ItemList from './ItemList';
-import ItemDetail from './ItemDetail';
-
-function App() {
+import React from "react"
+import './../styles/App.css;
+  
+const App=()=> {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<ItemList />} />
-        <Route path="/items/:id" element={<ItemDetail />} />
-      </Routes>
-    </Router>
-  );
+  <div>
+    
+    </div>
+  )
 }
 
 export default App;
